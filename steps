@@ -26,3 +26,14 @@ se agrega ejemplo de carrusel, para que funcione se debe agregar la linea de scr
 se ajusta tamaño de las imagenes para que todas se vean del mismo tamaño
 
 git commit -m "Separar menu hacia la derecha, implemntacion de carrusel, ajuste de tamaños de imagenes del carrusel"
+
+Uso de tarjetas, 
+se ajusta la forma y el tamaño de la tarjeta,
+ajuste de bloque para pantallas pequeñas, es decir no deja ver cierta seccion
+uso de tarjetas horizontales
+uso de footer,
+uso de iconos
+
+queda pendiente el tema del hoatin gratuito o economico
+
+git commit -m "Uso de tarjetas, se agrega footer, implementacion de iconos"
