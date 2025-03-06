@@ -1,0 +1,10 @@
+Este repositorio esta creado para realizar ejercicios de desarrollo front-end
+
+pasos del repositorio creado en github
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ederam/utilidades-web.git
+git push -u origin main
