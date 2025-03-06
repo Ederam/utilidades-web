@@ -20,7 +20,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <!-- <div class="navbar-nav"> -->
+            <!-- agregar espacios a la derecha -->
+            <!-- <div class="navbar-nav ms-5"> -->
+            <!-- separar ese menu8 hasta el otro lado hasta dodne pueda, uso de auto -->
+            <div class="navbar-nav ms-auto">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#">Features</a>
               <a class="nav-link" href="#">Pricing</a>
@@ -30,5 +34,55 @@
         </div>
       </nav>
     
+      <!-- Carousel-Carrusel -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="max-height: 400px;">
+            <img src="img/slider-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" style="max-height: 400px;">
+            <img src="img/slider-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" style="max-height: 400px;">
+            <img src="img/slider-3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- ejemplo -->
+       <!-- contenedor de lado a lado, color warning, padding eje Y de 5, y que centre el texto -->
+       <div class="containter-fluid bg-warning py-5 text-center">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2">1</div>
+            <div class="col-sm-6 col-md-4 col-lg-2">2</div>
+            <div class="col-sm-6 col-md-4 col-lg-2">3</div>
+            <div class="col-sm-6 col-md-4 col-lg-2">4</div>
+            <div class="col-sm-6 col-md-4 col-lg-2">5</div>
+            <div class="col-sm-6 col-md-4 col-lg-2">6</div>
+        </div>
+       </div>
+       <div class="container mt-5">
+        <h2 class="text-center">ACERCA DE</h2>
+        <div class="row">
+            <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa quis consequuntur, eos soluta nam debitis qui. Recusandae quae doloremque expedita ut magnam a, eveniet modi aut accusantium. Iusto, iure!</div>
+            <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus qui saepe quasi. Consequuntur nostrum accusantium veniam dignissimos neque, repudiandae fuga corporis beatae nobis ipsum maxime ab qui non cum ut.</div>
+        </div>
+       </div>
+
+      <!-- Se debe agregar para que puedan funcionar correctamente nabvar y carousel de bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

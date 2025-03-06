@@ -19,3 +19,10 @@ en edicion de la pagina se aaaaaaaa codigo de nabvar de bootstrap para probar vi
 se configuran diferentes opciones para poder ver el menu sin que se contraiga 
 
 git commit -m "pruebas con ajustes para el menu"
+
+separar el menu un poco a su derecha
+se agrega ejemplo de carrusel, para que funcione se debe agregar la linea de script de bootstrap
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+se ajusta tamaño de las imagenes para que todas se vean del mismo tamaño
+
+git commit -m "Separar menu hacia la derecha, implemntacion de carrusel, ajuste de tamaños de imagenes del carrusel"
