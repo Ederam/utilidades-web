@@ -3,8 +3,14 @@ Este repositorio esta creado para realizar ejercicios de desarrollo front-end
 pasos del repositorio creado en github
 
 git init
-git add README.md
+git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Ederam/utilidades-web.git
 git push -u origin main
+
+Video guia
+https://www.youtube.com/watch?v=-ZInT4p9hH8
+Curso de Bootstrap COMPLETO - Crear Página Web y Subirla a Internet (HTML + CSS + JS)
+
+git commit -m "Resumen sobre contenedores, la cantidad de filas y columnas, margin y padding"
