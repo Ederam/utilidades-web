@@ -16,4 +16,10 @@ Sugiere el proyecto por defecto agregar extension angular.ng-template
 se sugiere dejarla habilitada unicamente para elk espacio de trabajo que se encesite
 en extensiones, configuracion, dar en Add to workspace Recommendations
 
+Adicion de codigo html y css desde el componente.ts
+uso de variables del componenete.ts en el codigo html
+adicionar funciones de javascript en el componente.ts
+agregar estilos globales
+    no funciona la implementacion del color-scheme
 
+git commit -m "Adicion de codigo html, css en comp.ts, lectura variablas, ejecucion de codigo javascript, agregar estilos globales"
