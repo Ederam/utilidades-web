@@ -23,3 +23,9 @@ agregar estilos globales
     no funciona la implementacion del color-scheme
 
 git commit -m "Adicion de codigo html, css en comp.ts, lectura variablas, ejecucion de codigo javascript, agregar estilos globales"
+
+creacion de componentes
+ng g c user
+Uso de de usercomponent en el componente principal
+
+git commit -m "Creacion de componente,usos del componente"
