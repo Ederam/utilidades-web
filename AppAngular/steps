@@ -1,0 +1,19 @@
+
+Video Guia
+https://www.youtube.com/watch?v=f7unUpshmpA
+Aprende ANGULAR 17 desde cero para principiantes GRATIS
+
+Instalacion de Angular
+npm i -g @angular/cli
+
+validar version de angular 
+ng  version
+
+Creacion de proyecto
+ng new MyAppAngular
+
+Sugiere el proyecto por defecto agregar extension angular.ng-template
+se sugiere dejarla habilitada unicamente para elk espacio de trabajo que se encesite
+en extensiones, configuracion, dar en Add to workspace Recommendations
+
+
