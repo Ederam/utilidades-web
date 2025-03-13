@@ -38,3 +38,23 @@ git commit -m "vista de variables en user"
 
 Uso de directivas
 @if
+
+dry-run --> sirve como para simular los comandos sin ejecutarlos , es decir se da enter y simula la creacion del componente o la instruccion que se le haya dado
+ejemplo
+ng g c games --dry-run
+muestra los archivos que crearia con la instruccionCREATE src/app/games/games.component.html (21 bytes)
+CREATE src/app/games/games.component.spec.ts (608 bytes)
+CREATE src/app/games/games.component.ts (221 bytes)
+CREATE src/app/games/games.component.css (0 bytes)
+ng g c games --skip-tests --dry-run
+PS D:\ER-DEV\Web-utilidades\AppAngular\MyAppAngular> ng g c games --skip-tests --dry-run
+CREATE src/app/games/games.component.html (21 bytes)
+CREATE src/app/games/games.component.ts (221 bytes)
+CREATE src/app/games/games.component.css (0 bytes)
+ng g c games --skip-tests --inline-style --inline-template --dry-run
+CREATE src/app/games/games.component.ts (216 bytes)
+
+finalmente quiero crear un solo archivo por lo tanto
+Nuevo componente
+ng g c games --skip-tests --inline-style --inline-template
+
