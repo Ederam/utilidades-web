@@ -33,3 +33,8 @@ git commit -m "Creacion de componente,usos del componente"
 se intenta implementar con Notificacion pero no funciona, ni sale error
 
 COntinuacion desarrollo del Video
+
+git commit -m "vista de variables en user"
+
+Uso de directivas
+@if

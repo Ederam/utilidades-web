@@ -1,4 +1,8 @@
-<h1>Bienvenido {{userName}}</h1>
-
-
-<h1>Por favor inicia sesión</h1>
+<section>
+    @if (IsConnected) {
+        <h1>Bienvenido {{userName}}</h1>
+    }
+    @else{
+        <h1>Por favor inicia sesión</h1>
+    }
+</section>
