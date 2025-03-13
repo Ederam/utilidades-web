@@ -73,3 +73,14 @@ se agrega el decorador @Output() que sirve para pasar informacion del componente
 el @Input() sirve para pasar informacion del componente padre al hijo
 
 git commit -m "paso de parametros entre componentes de manera bidireccional"
+
+Carga diferida de datos
+se quita el componente user del principal y se agrega html
+creacion de componente para commments
+ng g c comments --skip-tests --inline-style --inline-template
+uso de @defer, lo que hace es cargar el componente que contiene cuando la CPU no tenga peticiones, carga con otra prioridad (1:17 min aprox)
+
+git commit -m "Carga diferida de datos, componente de comments, @defer, @placeholder, @loading"
+
+
+
