@@ -1,10 +1,16 @@
 <section>
     @if (IsConnected) {
         <h1>Bienvenido {{userName}}</h1>
+        <img 
+        (click)="greet()"
+        src="https://github.com/Ederam.png" 
+        alt="photo">
     }
     @else{
         <h1>Por favor inicia sesión</h1>
+        <button (click)="IsConnected=true">Log In</button>
     }
-    <app-games></app-games>
+    <app-games userName="{{ userName }}"></app-games>
+    <!-- <app-games></app-games> -->
 </section>
 

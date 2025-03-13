@@ -58,3 +58,12 @@ finalmente quiero crear un solo archivo por lo tanto
 Nuevo componente
 ng g c games --skip-tests --inline-style --inline-template
 
+@for
+
+--
+se agreg imagen y se valida como traer el aatar de github
+se adiciona evento click en la imagen
+se agrega boton log in y se cambia el valor de la variable isConnected por lo que hace que se comportre como un state
+uso de ´decorador @input para poder pasar variablaes entre componentes
+
+git commit -m "Se agrega imagen de avatar de github a boton, se adiciona evento click, se cambia estado con boton login, se ahgrega decorador @Input()"

@@ -8,6 +8,9 @@ import { GamesComponent } from "../games/games.component";
   styleUrl: './user.component.css'
 })
 export class UserComponent {
+greet() {
+alert('Hola a todos!!!!');
+}
   userName='Ederam';
-  IsConnected=true;
+  IsConnected=false; // esta variable se comporta como un state
 }

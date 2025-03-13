@@ -3,3 +3,9 @@ section {
     margin: 0 auto;
     padding-top: 32px;
 }
+
+img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
