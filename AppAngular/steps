@@ -29,3 +29,7 @@ ng g c user
 Uso de de usercomponent en el componente principal
 
 git commit -m "Creacion de componente,usos del componente"
+
+se intenta implementar con Notificacion pero no funciona, ni sale error
+
+COntinuacion desarrollo del Video
