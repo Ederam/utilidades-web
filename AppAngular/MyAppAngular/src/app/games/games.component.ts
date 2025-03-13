@@ -4,9 +4,11 @@ import { Component } from '@angular/core';
   selector: 'app-games',
   imports: [],
   template: `
-    <p>
-      games works!
-    </p>
+    <ul>
+      @for (game of games; track game.id) {
+        <li>{{ game.name}}</li>
+      }
+    </ul>
   `,
   styles: ``
 })
