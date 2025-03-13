@@ -67,3 +67,9 @@ se agrega boton log in y se cambia el valor de la variable isConnected por lo qu
 uso de ´decorador @input para poder pasar variablaes entre componentes
 
 git commit -m "Se agrega imagen de avatar de github a boton, se adiciona evento click, se cambia estado con boton login, se ahgrega decorador @Input()"
+
+pasar parametros del componente hijo al componente padre
+se agrega el decorador @Output() que sirve para pasar informacion del componente hijo al padre
+el @Input() sirve para pasar informacion del componente padre al hijo
+
+git commit -m "paso de parametros entre componentes de manera bidireccional"

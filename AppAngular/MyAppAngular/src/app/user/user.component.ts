@@ -8,9 +8,16 @@ import { GamesComponent } from "../games/games.component";
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-greet() {
-alert('Hola a todos!!!!');
-}
+
   userName='Ederam';
   IsConnected=false; // esta variable se comporta como un state
+  favGame='';
+
+  getFavorite(gameName: string){
+    this.favGame = gameName;
+  }
+
+  greet() {
+    alert('Hola a todos!!!!');
+    }
 }

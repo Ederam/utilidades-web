@@ -10,7 +10,13 @@
         <h1>Por favor inicia sesión</h1>
         <button (click)="IsConnected=true">Log In</button>
     }
-    <app-games userName="{{ userName }}"></app-games>
+    <app-games 
+    (addFavoriteEvent)="getFavorite($event)"
+    userName="{{ userName }}"></app-games>
+
+    @if (favGame != '') {
+        <p>Tu juego favorito es {{ favGame }}</p>
+    }
     <!-- <app-games></app-games> -->
 </section>
 
