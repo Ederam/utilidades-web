@@ -1,0 +1,21 @@
+<div class="timeline-container">
+  <div class="timeline-line">
+    <div class="cart-icon" [style.left.%]="(100 / (steps().length - 1)) * currentStep()">
+      <!-- SVG del carrito -->
+    </div>
+
+    <div class="timeline-step" *ngFor="let step of steps(); let i = index">
+      <div [class.active]="i <= currentStep()">
+        <div class="circle"></div>
+        <p class="label">{{ step.label }}</p>
+        <p class="date">{{ step.date }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Botones fuera de la línea -->
+  <div class="controls">
+    <button (click)="prevStep()">Anterior</button>
+    <button (click)="nextStep()">Siguiente</button>
+  </div>
+</div>
