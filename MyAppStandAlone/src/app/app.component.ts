@@ -5,6 +5,9 @@ import { TrackingTimelineComponent } from './components/tracking-timeline/tracki
   selector: 'app-root',
   standalone: true,
   imports: [TrackingTimelineComponent],
-  template: `<app-tracking-timeline></app-tracking-timeline>`
+  template: `
+    <h1>Tracking App</h1>
+    <app-tracking-timeline [estado]="'Entrega-Oficina'"></app-tracking-timeline>
+  `
 })
 export class AppComponent {}

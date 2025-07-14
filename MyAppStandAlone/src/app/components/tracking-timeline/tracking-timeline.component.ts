@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TrackingService } from '../../services/tracking.service';
 import { EventoTracking, ETIQUETAS_AMIGABLES } from '../../models/tracking.model';
@@ -10,7 +10,24 @@ import { EventoTracking, ETIQUETAS_AMIGABLES } from '../../models/tracking.model
   templateUrl: './tracking-timeline.component.html',
   styleUrls: ['./tracking-timeline.component.css']
 })
-export class TrackingTimelineComponent implements OnInit {
+export class TrackingTimelineComponent implements OnChanges {
+
+  //ajuste para recibir el estado desde el componente padre
+  @Input() estado: string = '';
+  etapas: { etapa: string, fecha: string }[] = [];
+
+  constructor(private trackingService: TrackingService) {}
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['estado']) {
+      this.etapas = this.trackingService.obtenerEtapasPorEstado(this.estado);
+    }
+  }
+
+  getEtiqueta(etapa: string): string {
+    return ETIQUETAS_AMIGABLES[etapa] || etapa;
+  }
+
+
 
   eventos: EventoTracking[] = [];
 
@@ -19,9 +36,7 @@ export class TrackingTimelineComponent implements OnInit {
     'Pre-Guia': ['PorIniciar', 'RecibimosTuEnvio', 'BodegaOrigen', 'Viajando', 'BodegaDestino', 'Entregado'],
     'Entrega-Fallida': ['RecibimosTuEnvio', 'BodegaOrigen', 'Viajando', 'BodegaDestino', 'PrimerIntento'],
     'Entrega-Oficina': ['RecibimosTuEnvio', 'BodegaOrigen', 'Viajando', 'BodegaDestino', 'ReclamarOficina']
-  };
-
-  constructor(private trackingService: TrackingService) {}
+  };  
 
   ngOnInit(): void {
     const data = this.trackingService.getTrackingData();
@@ -35,8 +50,5 @@ export class TrackingTimelineComponent implements OnInit {
         fechaStr: data[etapa]
       }));
   }
-
-  getEtiqueta(etapa: string): string {
-    return ETIQUETAS_AMIGABLES[etapa] || etapa;
-  }
+  
 }

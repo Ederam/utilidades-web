@@ -1,4 +1,4 @@
-<h2>Seguimiento de envío</h2>
+<!-- <h2>Seguimiento de envío</h2>
 
 <div class="timeline">
   <div *ngFor="let evento of eventos" class="timeline-step">
@@ -10,4 +10,12 @@
       <div>{{ evento.fechaStr }}</div>
     </div>
   </div>
+</div> -->
+
+<!-- Ajuste para visualizar las etapas del seguimiento según el estado recibido desde el componente padre: -->
+<h3>Seguimiento: {{ estado }}</h3>
+
+<div *ngFor="let etapa of etapas">
+  <strong>{{ getEtiqueta(etapa.etapa) }}:</strong> {{ etapa.fecha }}
 </div>
+
