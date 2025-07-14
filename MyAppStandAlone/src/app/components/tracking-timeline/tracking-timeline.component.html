@@ -1,1 +1,13 @@
-<p>tracking-timeline works!</p>
+<h2>Seguimiento de envío</h2>
+
+<div class="timeline">
+  <div *ngFor="let evento of eventos" class="timeline-step">
+    <div class="icon">
+      <span class="dot"></span>
+    </div>
+    <div class="info">
+      <strong>{{ getEtiqueta(evento.etapa) }}</strong>
+      <div>{{ evento.fechaStr }}</div>
+    </div>
+  </div>
+</div>

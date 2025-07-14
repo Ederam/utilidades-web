@@ -4,8 +4,7 @@ import { TrackingTimelineComponent } from './components/tracking-timeline/tracki
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [TrackingTimelineComponent], // 👈 se importa directamente
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  imports: [TrackingTimelineComponent],
+  template: `<app-tracking-timeline></app-tracking-timeline>`
 })
 export class AppComponent {}
