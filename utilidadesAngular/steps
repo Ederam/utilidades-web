@@ -1,0 +1,6 @@
+Creacion de aplicacion
+ng new utilidadesAngular
+
+Creacion de componente
+ng generate component components/TrackingTimeline
+
