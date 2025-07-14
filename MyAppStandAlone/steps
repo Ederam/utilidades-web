@@ -1,0 +1,7 @@
+
+Creacion de App
+ng new MyAppStandAlone --standalone
+
+Crear componente
+ng generate component components/TrackingTimeline --standalone
+
